@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>TechBlog</h1>
+            </div>
+            <div class="header-actions">
+                <button class="search-btn">🔍</button>
+                <button class="theme-toggle">🌙</button>
+                <div class="user-profile">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM0Yjc2ODgiLz4KPGV0ZXh0IHg9IjIwIiB5PSIyNSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VTwvdGV4dD4KPC9zdmc+" alt="User Avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#" class="nav-link">Technology</a></li>
+                <li><a href="#" class="nav-link">Design</a></li>
+                <li><a href="#" class="nav-link">Development</a></li>
+                <li><a href="#" class="nav-link">Tutorials</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout Container (CSS Grid) -->
+    <div class="main-layout">
+        <!-- Main Content Area -->
+        <main class="content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to Modern Web Development</h2>
+                    <p>Explore the latest trends in responsive design, CSS Grid, Flexbox, and mobile-first development.</p>
+                    <button class="cta-button">Get Started</button>
+                </div>
+            </section>
+
+            <!-- Featured Articles (Flexbox Cards) -->
+            <section class="featured-articles">
+                <h3>Featured Articles</h3>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="placeholder-img">📱</div>
+                        </div>
+                        <div class="article-content">
+                            <h4>Responsive Design Best Practices</h4>
+                            <p>Learn how to create layouts that work seamlessly across all devices using modern CSS techniques.</p>
+                            <div class="article-meta">
+                                <span class="date">Mar 15, 2025</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="placeholder-img">🎨</div>
+                        </div>
+                        <div class="article-content">
+                            <h4>CSS Grid vs Flexbox</h4>
+                            <p>Understanding when to use CSS Grid and when to use Flexbox for optimal layout design.</p>
+                            <div class="article-meta">
+                                <span class="date">Mar 12, 2025</span>
+                                <span class="read-time">8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="placeholder-img">⚡</div>
+                        </div>
+                        <div class="article-content">
+                            <h4>Performance Optimization</h4>
+                            <p>Essential techniques for making your websites faster and more efficient for better user experience.</p>
+                            <div class="article-meta">
+                                <span class="date">Mar 10, 2025</span>
+                                <span class="read-time">12 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <div class="placeholder-img">🚀</div>
+                        </div>
+                        <div class="article-content">
+                            <h4>Modern JavaScript Frameworks</h4>
+                            <p>A comprehensive guide to choosing the right JavaScript framework for your next project.</p>
+                            <div class="article-meta">
+                                <span class="date">Mar 8, 2025</span>
+                                <span class="read-time">15 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Latest Posts -->
+            <section class="latest-posts">
+                <h3>Latest Posts</h3>
+                <div class="posts-list">
+                    <article class="post-item">
+                        <h4>Understanding CSS Container Queries</h4>
+                        <p>Container queries are revolutionizing responsive design by allowing components to adapt based on their container size rather than viewport size.</p>
+                        <span class="post-date">March 14, 2025</span>
+                    </article>
+
+                    <article class="post-item">
+                        <h4>Web Accessibility in 2025</h4>
+                        <p>Essential practices for building inclusive web experiences that work for everyone, including users with disabilities.</p>
+                        <span class="post-date">March 13, 2025</span>
+                    </article>
+
+                    <article class="post-item">
+                        <h4>CSS Custom Properties Deep Dive</h4>
+                        <p>Mastering CSS custom properties (variables) for more maintainable and dynamic stylesheets.</p>
+                        <span class="post-date">March 11, 2025</span>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Newsletter Signup -->
+            <div class="widget newsletter">
+                <h4>Stay Updated</h4>
+                <p>Get the latest web development tips delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Popular Tags -->
+            <div class="widget tags">
+                <h4>Popular Tags</h4>
+                <div class="tag-list">
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Responsive</span>
+                    <span class="tag">Grid</span>
+                    <span class="tag">Flexbox</span>
+                    <span class="tag">Performance</span>
+                    <span class="tag">Accessibility</span>
+                </div>
+            </div>
+
+            <!-- Recent Comments -->
+            <div class="widget comments">
+                <h4>Recent Comments</h4>
+                <div class="comment-list">
+                    <div class="comment-item">
+                        <div class="comment-avatar">👤</div>
+                        <div class="comment-content">
+                            <strong>Sarah M.</strong>
+                            <p>Great article on CSS Grid! Really helped me understand the fundamentals.</p>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">👨</div>
+                        <div class="comment-content">
+                            <strong>Alex R.</strong>
+                            <p>The responsive design tips are exactly what I needed for my project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="widget social">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘 Facebook</a>
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                    <a href="#" class="social-link">💼 LinkedIn</a>
+                    <a href="#" class="social-link">📸 Instagram</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>TechBlog</h4>
+                <p>Your source for modern web development insights, tutorials, and best practices.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Mobile Development</a></li>
+                    <li><a href="#">DevOps</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📧 hello@techblog.com</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📍 San Francisco, CA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TechBlog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
